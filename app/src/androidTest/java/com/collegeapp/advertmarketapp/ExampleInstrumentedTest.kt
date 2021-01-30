@@ -1,4 +1,4 @@
-package com.appcollege.adsmarketapp
+package com.collegeapp.advertmarketapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.appcollege.adsmarketapp", appContext.packageName)
+        assertEquals("com.collegeapp.advertmarketapp", appContext.packageName)
     }
 }

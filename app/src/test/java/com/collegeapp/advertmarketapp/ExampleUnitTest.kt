@@ -1,4 +1,4 @@
-package com.appcollege.adsmarketapp
+package com.collegeapp.advertmarketapp
 
 import org.junit.Test
 
