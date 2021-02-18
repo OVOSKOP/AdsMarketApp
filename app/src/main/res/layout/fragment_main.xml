@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ScrollingActivity"
+    tools:context=".MainActivity"
     android:background="@color/background">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -31,8 +31,15 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="false"
                 android:cropToPadding="false"
+                android:filterTouchesWhenObscured="false"
                 android:scaleType="fitXY"
-                app:srcCompat="@mipmap/placeholder_1mi" />
+                app:srcCompat="@mipmap/bg_main" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#86000000" />
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"

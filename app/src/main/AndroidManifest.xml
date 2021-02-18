@@ -3,6 +3,7 @@
     package="com.collegeapp.advertmarketapp">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,9 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdvertMarketApp">
         <activity
-            android:name=".ScrollingActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AdvertMarketApp.NoActionBar">
+            android:theme="@style/Theme.AdvertMarketApp.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
