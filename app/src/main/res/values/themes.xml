@@ -23,4 +23,11 @@
     <style name="Theme.AdvertMarketApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.AdvertMarketApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
 </resources>

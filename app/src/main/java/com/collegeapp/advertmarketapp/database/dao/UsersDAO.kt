@@ -7,7 +7,7 @@ import com.collegeapp.advertmarketapp.database.entity.Users
 @Dao
 interface UsersDAO {
     @Query("SELECT * FROM users")
-    fun getList() : LiveData<List<Users>>
+    suspend fun getList() : List<Users>
 
     @Query("SELECT * FROM users WHERE login = :login")
     suspend fun getByLogin(login: String) : Users

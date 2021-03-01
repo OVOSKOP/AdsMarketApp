@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/app_nav"
-    app:startDestination="@id/fragmentMain">
+    app:startDestination="@id/fragmentAuth">
 
     <fragment
         android:id="@+id/fragmentMain"
@@ -11,8 +11,8 @@
         android:label="FragmentMain"
         tools:layout="@layout/fragment_main">
         <action
-            android:id="@+id/to_auth"
-            app:destination="@id/fragmentAuth" />
+            android:id="@+id/to_order"
+            app:destination="@id/fragmentOrder" />
     </fragment>
     <fragment
         android:id="@+id/fragmentAuth"
@@ -22,8 +22,10 @@
         <action
             android:id="@+id/to_home"
             app:destination="@id/fragmentMain"
-            app:launchSingleTop="true"
-            app:popUpTo="@id/app_nav"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/app_nav" />
     </fragment>
+    <fragment
+        android:id="@+id/fragmentOrder"
+        android:name="com.collegeapp.advertmarketapp.screens.order.FragmentOrder"
+        android:label="FragmentOrder" />
 </navigation>

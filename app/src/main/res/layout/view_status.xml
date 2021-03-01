@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/round_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_status_round" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_weight="1"
+        android:background="@color/subbackground" />
+
+    <View
+        android:id="@+id/round_2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_status_round" />
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_weight="1"
+        android:background="@color/subbackground" />
+
+    <View
+        android:id="@+id/round_3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_status_round" />
+
+    <View
+        android:id="@+id/line_3"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_weight="1"
+        android:background="@color/subbackground" />
+
+    <View
+        android:id="@+id/round_4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_status_round" />
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_weight="1"
+        android:background="@color/subbackground" />
+
+    <View
+        android:id="@+id/round_5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_status_round" />
+
+</LinearLayout>

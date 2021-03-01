@@ -90,4 +90,27 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="roles">
+        <item>Клиент-менеджер</item>
+        <item>Арт-директор</item>
+        <item>Менеджер по производству</item>
+        <item>Менеджер по размещению</item>
+        <item>Директор</item>
+    </string-array>
+
+    <string-array name="types">
+        <item>Рекламный баннер</item>
+        <item>Рекламный буклет</item>
+        <item>Рекламный видеоролик</item>
+        <item>Рекламная визитка</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Арт-директор</item>
+        <item>Менеджер по производству</item>
+        <item>Менеджер по размещению</item>
+        <item>Директор</item>
+        <item>Выполнено</item>
+    </string-array>
 </resources>

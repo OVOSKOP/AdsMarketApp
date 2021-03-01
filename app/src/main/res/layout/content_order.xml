@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Требования клиента"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_area_txt" />
+
+        <TextView
+            android:id="@+id/order_client_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="TextView"
+            android:textColor="@color/title_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Заказ"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_phone_txt" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Описание области рекламы"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/client_email_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="E-Mail"
+            android:textColor="@color/title_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_name_txt" />
+
+        <TextView
+            android:id="@+id/client_phone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Phone"
+            android:textColor="@color/title_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/client_email_txt" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Клиент"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/title_order_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/order_id_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/order_id_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="#1"
+            android:textColor="@color/title_color"
+            app:layout_constraintBottom_toTopOf="@+id/divider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/subbackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_order_txt" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/subbackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_client_id" />
+
+        <TextView
+            android:id="@+id/client_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="@color/title_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/order_area_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="TextView"
+            android:textColor="@color/title_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/stage_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider3">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="План материала"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plan_material_txt">
+
+                <Button
+                    android:id="@+id/tz_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Загрузить ТЗ" />
+
+                <TextView
+                    android:id="@+id/url_tz_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Не выбрано"
+                    android:textColor="@color/title_color" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/plan_material_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_block"
+                android:ems="10"
+                android:hint="План материала"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white"
+                android:textColorHint="@color/title_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/plan_material_lbl" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Арт"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+                <Button
+                    android:id="@+id/choose_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Выбрать цвет" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/color_preview"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="0dp" />
+
+                <TextView
+                    android:id="@+id/color_hex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Не выбрано"
+                    android:textColor="@color/title_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/plan_material_lbl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/title_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView21"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subbackground"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stage_1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/stage_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+            <TextView
+                android:id="@+id/plan_work_lbl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/title_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView8"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/plan_work"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_block"
+                android:ems="10"
+                android:hint="План работы"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white"
+                android:textColorHint="@color/title_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/plan_work_lbl" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plan_work">
+
+                <Button
+                    android:id="@+id/load_res"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Загрузить результат" />
+
+                <TextView
+                    android:id="@+id/res_url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Не выбрано"
+                    android:textColor="@color/title_color" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Производство"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subbackground"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stage_2" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/stage_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider5"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/price_order_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Площадки"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/square_lbl" />
+
+            <TextView
+                android:id="@+id/square_lbl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/title_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/square_txt"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/square_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Площадки"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView16" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Размещение"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/order_sq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_block"
+                android:ems="10"
+                android:hint="Список площадок для размещения"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white"
+                android:textColorHint="@color/title_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <EditText
+                android:id="@+id/order_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_block"
+                android:ems="10"
+                android:hint="Цена, р."
+                android:importantForAutofill="no"
+                android:inputType="textNoSuggestions|number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/title_color"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/order_sq" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subbackground"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stage_3" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/stage_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider6"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/comment_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView17"
+                tools:visibility="visible" />
+
+            <EditText
+                android:id="@+id/comment_order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_block"
+                android:ems="10"
+                android:hint="Комментарий"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white"
+                android:textColorHint="@color/title_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView17" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отчет"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/subbackground"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stage_4" />
+
+        <Button
+            android:id="@+id/save_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Завершить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

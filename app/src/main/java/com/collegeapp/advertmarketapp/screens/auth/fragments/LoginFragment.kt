@@ -14,6 +14,7 @@ import com.collegeapp.advertmarketapp.R
 import com.collegeapp.advertmarketapp.database.AppDatabase
 import com.collegeapp.advertmarketapp.database.dao.UsersDAO
 import com.collegeapp.advertmarketapp.database.entity.Users
+import com.collegeapp.advertmarketapp.utils.app
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -27,7 +28,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.view_login, container, false)
 
-        db = (requireContext().applicationContext as App).getDatabase()
+        db = app.getDatabase()
         usersDAO = db.usersDAO()
 
         val login = root.findViewById<EditText>(R.id.login_login)
@@ -61,6 +62,8 @@ class LoginFragment : Fragment() {
             if (user.password == pass.text.toString()) {
 
                 user.isLogin = true
+
+                app.currentUser = user
 
                 usersDAO.update(user)
                 findNavController().navigate(R.id.to_home)
